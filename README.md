@@ -4,9 +4,9 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep_Learning-EE4C2C.svg?logo=pytorch&logoColor=white)
 ![Status](https://img.shields.io/badge/Estado-WIP%20(En%20Desarrollo)-orange.svg)
 
-Transcripción Automática de Acordes mediante **Redes Neuronales Convolucionales (CNN)**.
-
 **WIP**
+
+Transcripción Automática de Acordes mediante **Redes Neuronales Convolucionales (CNN)**.
 
 <p align="center">
   <img src="./media/espectrograma_readme.png" alt="Ejemplo de un espectrograma" width="600">
