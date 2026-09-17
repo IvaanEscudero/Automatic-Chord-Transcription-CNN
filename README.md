@@ -1,4 +1,4 @@
-﻿# Automatic-Chord-Transcription
+﻿# Automatic-Chord-Transcription-CNN
 Transcripción Automática de Acordes mediante CNN (**WIP**).
 
 ![Ejemplo de un espectrograma](./media/espectrograma_readme.png)
@@ -9,8 +9,9 @@ El desarrollo del proyecto está estructurado en 5 etapas progresivas.
 
 **Nota**: Estas fases representan la planificación inicial y son susceptibles a modificaciones o adaptaciones según las necesidades técnicas que surjan durante el desarrollo.
 
+## Etapas de Desarrollo
 
-1. Extracción de Características y
+**1. Extracción de Características**
 
 El objetivo inicial es comprender y validar los datos de entrada antes de aplicar Inteligencia Artificial.
 
@@ -20,7 +21,7 @@ El objetivo inicial es comprender y validar los datos de entrada antes de aplica
 
     - Visualización para confirmar la representación de los acordes.
 
-2. Producto Mínimo Viable (MVP)
+**2. Producto Mínimo Viable (MVP)**
 
 Un entorno controlado y simplificado para validar la viabilidad del flujo de trabajo de la red neuronal.
 
@@ -30,7 +31,7 @@ Un entorno controlado y simplificado para validar la viabilidad del flujo de tra
 
     - Uso de audios completos como una única imagen de entrenamiento, sin aplicar ventanas temporales.
 
-3. Diseño y Entrenamiento de la Arquitectura CNN
+**3. Diseño y Entrenamiento de la Arquitectura CNN**
 
 Adaptación del reconocimiento de imágenes al contexto de la música.
 
@@ -38,7 +39,7 @@ Adaptación del reconocimiento de imágenes al contexto de la música.
 
     - Implementación de capas de MaxPooling para reducir la dimensionalidad y hacer que la red sea tolerante a variaciones en el tempo de ejecución.
 
-4. Ventanas Deslizantes
+**4. Ventanas Deslizantes**
 
 Análisis de pistas de audio reales continuas.
 
@@ -46,10 +47,20 @@ Análisis de pistas de audio reales continuas.
 
     - Implementación del cruce de datos: sincronización entre los fragmentos de audio extraídos y los archivos de texto que contienen el etiquetado temporal de los acordes.
 
-5. Datasets Reales y Desbalanceo de Clases
+**5. Datasets Reales y Desbalanceo de Clases**
 
 Escalado del modelo a entornos de producción o validación con datos reales complejos.
 
     - Integración de datasets estándar de la industria.
 
     - Aplicación de técnicas de mitigación de sesgo estadístico (como Weighted Cross-Entropy en la función de pérdida) para evitar que el modelo sobreprediga los acordes más comunes en detrimento de combinaciones menos frecuentes.
+
+---
+
+## Tecnologías Utilizadas
+
+* **Lenguaje:** Python 3.14+
+* **Procesamiento de Audio:** `librosa` (extracción de características y cromagramas).
+* **Deep Learning:** `PyTorch` (diseño, entrenamiento y evaluación de la Red Neuronal Convolucional).
+* **Manejo de Datos:** `NumPy` (operaciones matriciales) y `Pandas` (sincronización de etiquetas de tiempo).
+* **Visualización:** `Matplotlib` (generación de espectrogramas visuales para depuración).
