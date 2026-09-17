@@ -5,6 +5,7 @@
 ![Status](https://img.shields.io/badge/Estado-WIP%20(En%20Desarrollo)-orange.svg)
 
 Transcripción Automática de Acordes mediante **Redes Neuronales Convolucionales (CNN)**.
+
 **WIP**
 
 <p align="center">
