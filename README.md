@@ -1,7 +1,7 @@
 ﻿# Automatic-Chord-Transcription
 Transcripción Automática de Acordes mediante CNN (**WIP**).
 
-![Ejemplo de un espectrograma](./media/espectrograma.png)
+![Ejemplo de un espectrograma](./media/espectrograma_readme.png)
 
 Este proyecto tiene como objetivo desarrollar un modelo de Deep Learning basado en Redes Neuronales Convolucionales (CNN) capaz de identificar y transcribir acordes musicales a partir de señales de audio. El modelo procesa cromagramas en las 12 clases de notas musicales a lo largo del tiempo.
 
